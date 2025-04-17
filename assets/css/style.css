@@ -745,11 +745,13 @@ footer {
   line-height: 34px;
   font-weight: 500;
   border-radius: 999px;
-  border: 1px solid yellow;
+  border: 1px solid #ffea9c;
   text-align: center;
   padding: 14px 50px;
   margin: 0 auto 20px;
   display: block;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 153, 0.7), 
+              0 0 20px 6px rgba(255, 255, 153, 0.5);
 }
 .modal-bottom-info p {
   text-align: center;
@@ -1107,7 +1109,7 @@ footer {
 
 /* ---- */
 
-.sponsor-col.active ,.show-modal-overlay.active .speaker-user img{
+.sponsor-col.active ,.show-modal-overlay.active .speaker-user img ,.show-modal-overlay button{
   opacity: 1 !important;
   z-index: 3;
   position: relative;
@@ -1128,30 +1130,6 @@ footer {
   color: white;
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .sponsor-col.active ,.show-modal-overlay.active .speaker-user img{
-      opacity: 1 !important;
-      z-index: 3;
-      position: relative;
-      background-color: white;
-    }
-    .show-modal-overlay.active .speaker-user img{
-      border-radius: 50%;
-    }
-    .modal-backdrop.show {
-      opacity: 0.5;
-      background-color: #000;
-      z-index: 2;
-    }
-    .show-modal-overlay.active .box-two p ,.show-modal-overlay.active .box-two h6,.show-modal-overlay.active .box-two a ,.show-modal-overlay.active .box-two img{
-      opacity: 1 !important;
-      z-index: 3;
-      position: relative;
-      color: white;
-    }
-  }
-}
 /* ---- */
 @media (max-width: 640px) {
   .sponsor-col-data h3 {
