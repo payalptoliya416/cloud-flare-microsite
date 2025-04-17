@@ -706,6 +706,7 @@ footer {
 /* --footer modal start- */
 .footer-scanner-modal .modal-content {
   background-color: transparent;
+  margin: 10px 20px;
 }
 .footer-scanner-modal .modal-top-info {
   background: linear-gradient(229deg, #ffab80 14%, #ffc480 76%);
@@ -1109,7 +1110,7 @@ footer {
 
 /* ---- */
 
-.sponsor-col.active ,.show-modal-overlay.active .speaker-user img ,.show-modal-overlay button{
+.sponsor-col.active ,.show-modal-overlay.active .speaker-user img ,.show-modal-overlay.active button{
   opacity: 1 !important;
   z-index: 3;
   position: relative;
