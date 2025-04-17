@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Flare</title>
+    <!-- --fonts-- -->
+    <link rel="stylesheet" href="assets/css/fonts.css"/>
+         <!-- --bootstrap-- -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+         <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+   <!-- --style-- -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+    <div class="main">
+        <div class="micro-logo">
+            <img src="assets/image/logoone.png" alt="" class="mx-auto micro-one"/>
+            <img src="assets/image/logosec.png" alt="" class="mx-auto micro-sec"/>
+            <div class="back-btn">
+               <a href="index.html"><i class="bi bi-chevron-left "></i> Back</a> 
+            </div>
+        </div>
+        <div class="container">
+            <div class="survey-title">
+                <h3 class="gradiant-text">Survey Form</h3>
+            </div>
+            <div class="survey-form survey-form-new ">
+
+<!-- old form design start -->
+                <!-- <form action="">
+                    <div class="mb-3">
+                        <label for="question1" class="form-label">Question 1</label>
+                        <select name="question1" id="question1" class="form-select">
+                            <option value="" >Select Your Answer...</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="question2" class="form-label">Question 2</label>
+                        <select name="question2" id="question2" class="form-select">
+                            <option value="">Select Your Answer...</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="question3" class="form-label">Question 3</label>
+                        <select name="question3" id="question3" class="form-select">
+                            <option value="">Select Your Answer...</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                        </select>
+                    </div>
+                   <div class="survey-submit">
+                       <a type="submit" class="btn" href="survey-complete.html">Submit</a>
+                   </div>
+                </form> -->
+<!-- old form design start -->
+
+
+<!-- new form design start -->
+        <form action="" class="form-new">
+            <div class="rounded">
+                <!-- Rating Question -->
+                <div class="mb-4">
+                <label class="form-label fw-bold">How would you rate todayʼs event?</label>
+                <div class="satisfaction-group">
+                    <!-- 1 to 5 rating -->
+                    <label class="satisfaction-label">
+                    <input type="radio" name="rating" value="1"/>
+                    <span>1</span>
+                    </label>
+                    <label class="satisfaction-label">
+                    <input type="radio" name="rating" value="2"/>
+                    <span>2</span>
+                    </label>
+                    <label class="satisfaction-label">
+                    <input type="radio" name="rating" value="3"/>
+                    <span>3</span>
+                    </label>
+                    <label class="satisfaction-label">
+                    <input type="radio" name="rating" value="4"/>
+                    <span>4</span>
+                    </label>
+                    <label class="satisfaction-label">
+                    <input type="radio" name="rating" value="5"/>
+                    <span>5</span>
+                    </label>
+                </div>
+                <div class="d-flex justify-content-between scale-text mt-2">
+                    <div>Least Satisfied</div>
+                    <div>Most Satisfied</div>
+                </div>
+                </div>
+
+                <!-- more than one select start-->
+                <div class="more-than-one">
+                    <h5 class=" mb-1">Which of the following is your primary concern regarding cyber security operations for your organizations?</h5>
+                    <p class="mb-3">(Multiple choice)</p>
+
+                    <!-- Item 1 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="Hybrid Cloud"/>
+                            <span>Navigating a complex threat environment: Managing hybrid to multi-cloud in a single platform</span>
+                        </label>
+                    
+                        <!-- Item 2 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="Zero Day Attacks"/>
+                            <span>Advance & zero-day attacks</span>
+                        </label>
+                    
+                        <!-- Item 3 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="Hybrid Workforce"/>
+                            <span>Securing a hybrid workforce</span>
+                        </label>
+                    
+                        <!-- Item 4 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="Zero Trust"/>
+                            <span>Deploying zero trust architecture</span>
+                        </label>
+                    
+                        <!-- Item 5 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="AI ML"/>
+                            <span>Actionable threat intelligence: AI / ML capabilities</span>
+                        </label>
+                    
+                        <!-- Item 6 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="BYOD"/>
+                            <span>Unmanaged Devices: Need consistency of BYOD protection across remote or on-site users</span>
+                        </label>
+                </div>
+
+                <!-- more than one select start-->
+                <div class="more-than-one mt-5">
+                    <h5 class=" mb-1">What are the key priorities or milestones
+                        your organization aims to achieve regarding
+                        cybersecurity solutions in 3 – 6 months:</h5>
+                    <p class="mb-3">(Multiple choice)</p>
+
+                    <!-- Item 1 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="Unified"/>
+                            <span>Unified, scalable security purpose-built for distributed
+                                and multi-cloud environment</span>
+                        </label>
+                    
+                        <!-- Item 2 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="Application"/>
+                            <span>Application, Cloud and Network Security Consolidation</span>
+                        </label>
+                    
+                        <!-- Item 3 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="Network"/>
+                            <span>Network Security Modernization / Tech Refresh</span>
+                        </label>
+                    
+                        <!-- Item 4 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="Expansion"/>
+                            <span>Expansion of new SaaS workload deployment with
+                                cloud security enabled</span>
+                        </label>
+                    
+                        <!-- Item 5 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="Resiliency"/>
+                            <span>Other project scopes related to Cyber Resiliency in FY25</span>
+                        </label>
+                </div>
+
+                <!-- select one radio button start-->
+                <div class="select-one mt-5">
+                    <h5 class=" mb-1">Which of the following types of cyber threats have you experienced in your organization in the past 6 months?</h5>
+                    <p class="mb-3">(Select ONE which is most critical impact)</p>
+
+                    <!-- Item 1 -->
+                        <label class="radio-block radio-label">
+                            <input type="radio" name="concern[]" value="DDoS"/>
+                            <span>DDoS Attack
+                            </span>
+                        </label>
+                    
+                        <!-- Item 2 -->
+                        <label class="radio-block radio-label">
+                            <input type="radio" name="concern[]" value="Bot"/>
+                            <span>Bot Attack
+                            </span>
+                        </label>
+                    
+                        <!-- Item 3 -->
+                        <label class="radio-block radio-label">
+                            <input type="radio" name="concern[]" value="Ransomware"/>
+                            <span>Ransomware Attack
+                            </span>
+                        </label>
+                    
+                        <!-- Item 4 -->
+                        <label class="radio-block radio-label">
+                            <input type="radio" name="concern[]" value="Identity"/>
+                            <span>Identity or Access Attack
+                            </span>
+                        </label>
+                    
+                        <!-- Item 5 -->
+                        <label class="radio-block radio-label">
+                            <input type="radio" name="concern[]" value="Network"/>
+                            <span>Network or Firewall Attack
+                            </span>
+                        </label>
+                        <!-- Item 6-->
+                        <label class="radio-block radio-label">
+                            <input type="radio" name="concern[]" value="Web"/>
+                            <span>Web or Application Attack
+
+                            </span>
+                        </label>
+                        <!-- Item 7 -->
+                        <label class="radio-block radio-label">
+                            <input type="radio" name="concern[]" value="Hijacking"/>
+                            <span>DNS Hijacking or On Path Attack
+
+                            </span>
+                        </label>
+                        <!-- Item 8 -->
+                        <label class="radio-block radio-label">
+                            <input type="radio" name="concern[]" value="Resources"/>
+                            <span>Cloud Resources Attack
+
+                            </span>
+                        </label>
+                </div>
+
+                <!-- more than one select start-->
+                <div class="more-than-one mt-5">
+                    <h5 class=" mb-1">What would you like to explore next
+                        with Cloudflare following Immerse
+                        Singapore 2025?</h5>
+                    <p class="mb-3">(Select one or more options that best reflect your interest)
+                    </p>
+
+                    <!-- Item 1 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="Meeting"/>
+                            <span>Discovery Meeting – Explore your application,
+                                security, and network modernization needs</span>
+                        </label>
+                    
+                        <!-- Item 2 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="Solutions"/>
+                            <span>Meet the Expert – Use case-based technical deep dive
+                                with our Solutions Engineering team</span>
+                        </label>
+                    
+                        <!-- Item 3 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="serverless"/>
+                            <span>Sign me up for the upcoming BlazeHack Test Flight –
+                                Hands-on serverless development mastery series</span>
+                        </label>
+                    
+                        <!-- Item 4 -->
+                        <label class="checkbox-block checkbox-label">
+                            <input type="checkbox" name="concern[]" value="Security"/>
+                            <span>Request a Security / Performance Assessment –
+                                Understand gaps an</span>
+                        </label>
+                </div>
+
+                <!-- select one radio button start-->
+                <div class="select-one mt-5">
+                    <h5 class=" mb-2">After this event, I would like to
+                        be contacted by:</h5>
+
+                    <!-- Item 1 -->
+                        <label class="radio-block radio-label">
+                            <input type="radio" name="concern[]" value="Engineering"/>
+                            <span>ST Engineering
+                            </span>
+                        </label>
+                    
+                        <!-- Item 2 -->
+                        <label class="radio-block radio-label">
+                            <input type="radio" name="concern[]" value="Pacific"/>
+                            <span>Pacific Tech
+                            </span>
+                        </label>
+                    
+                        <!-- Item 3 -->
+                        <label class="radio-block radio-label">
+                            <input type="radio" name="concern[]" value="TechDirect"/>
+                            <span>Sumologic | TechDirect
+                            </span>
+                        </label>
+                    
+                        <!-- Item 4 -->
+                        <label class="radio-block radio-label">
+                            <input type="radio" name="concern[]" value="moment"/>
+                            <span>Not at this moment
+                            </span>
+                        </label>
+                </div>
+
+                <div class="survey-submit">
+                    <a type="submit" class="btn" href="survey-complete.html">Submit</a>
+                </div>
+        </form>
+
+<!-- new form design end -->
+
+                
+            </div> 
+        </div>
+            <!-- --footer -->
+            <div class="footer-powered">
+                <p>Powered by Cloudflare</p>
+              </div>
+            <footer>
+                <ul class="footer-nav">
+                  <li>
+                    <a href="index.html">
+                      <img src="assets/image/footer-1.png" alt="Home"/>
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="agenda_first.html">
+                      <img src="assets/image/footer-2.png" alt="Agenda"/>
+                      <span>Agenda
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#footerModal01">
+                        <div class="icon-circle">
+                          <img src="assets/image/scann.png" alt="Profile"/>
+                          <span>Profile</span>
+                        </div>
+                      </a>
+                  </li>
+                  <li class="active">
+                    <a href="survey.html">
+                        <img src="assets/image/footer-3.png" alt="Survey"/>
+                      <span>Survey
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="passport-programm.html">
+                      <img src="assets/image/footer-4.png" alt="Survey"/>
+                      <span>Passport <br/>
+                        Program
+                    </span>
+                    </a>
+                  </li>
+                </ul>
+            </footer>
+              <!-- --footer scanner modal--01 -->
+        <div class="modal fade footer-scanner-modal" id="footerModal01" tabindex="-1" aria-labelledby="footerModal01Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-top-info">
+                        <div class="modal-close-btn">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="footer-qr-info">
+                                <h3>My QR Code</h3>
+                                <img src="assets/image/QR.png" alt="" class="mx-auto" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-bottom-info">
+                        <button class="btn">AI Mixology</button>
+                       <p>Visit the AI Mixologist booth, <br/> where your
+                        perfect drink is <br/> determined by A</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        <!-- --footer scanner modal--02 -->
+         <!-- ---To open it, change the target ID in the <li> --  footerModal02-->
+        <div class="modal fade footer-scanner-modal" id="footerModal02" tabindex="-1" aria-labelledby="footerModal02Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-top-info">
+                        <div class="modal-close-btn">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="footer-qr-info">
+                                <h3>My QR Code</h3>
+                                <img src="assets/image/QR.png" alt="" class="mx-auto" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-bottom-info">
+                        <button class="btn">AI Mixology</button>
+                        <h2>Order Number: 001</h2>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      <!-- --bootstrap-- -->
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/main.js"></script>
+</body>
+</html>
