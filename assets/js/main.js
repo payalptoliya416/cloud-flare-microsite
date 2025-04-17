@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
                       sponsor.classList.remove('active');
                   }, { once: true });
 
-                  adjustModalPosition( sponsor);
+                  adjustModalPosition(sponsor);
               }
           });
       }
   });
 
-  function adjustModalPosition( sponsor) {
+  function adjustModalPosition(sponsor) {
     const sponsorRect = sponsor.getBoundingClientRect();
     const sponsorTop = sponsorRect.top + window.scrollY;
     const windowHeight = window.innerHeight;
