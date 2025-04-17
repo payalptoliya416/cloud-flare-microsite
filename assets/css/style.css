@@ -1129,7 +1129,30 @@ footer {
   color: white;
 }
 
-
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .sponsor-col.active ,.show-modal-overlay.active .speaker-user img{
+      opacity: 1 !important;
+      z-index: 3;
+      position: relative;
+      background-color: white;
+    }
+    .show-modal-overlay.active .speaker-user img{
+      border-radius: 50%;
+    }
+    .modal-backdrop.show {
+      opacity: 0.5;
+      background-color: #000;
+      z-index: 2;
+    }
+    .show-modal-overlay.active .box-two p ,.show-modal-overlay.active .box-two h6,.show-modal-overlay.active .box-two a ,.show-modal-overlay.active .box-two img{
+      opacity: 1 !important;
+      z-index: 3;
+      position: relative;
+      color: white;
+    }
+  }
+}
 /* ---- */
 @media (max-width: 640px) {
   .sponsor-col-data h3 {
