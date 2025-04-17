@@ -1115,7 +1115,7 @@ footer {
 
 /* ---- */
 
-.sponsor-col.active ,.show-modal-overlay.active .speaker-user img ,.show-modal-overlay.active a button{
+.sponsor-col.active ,.show-modal-overlay.active .speaker-user img ,.show-modal-overlay.active .box-two a button{
   opacity: 1 !important;
   z-index: 3;
   position: relative;
