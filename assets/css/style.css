@@ -706,7 +706,6 @@ footer {
 /* --footer modal start- */
 .footer-scanner-modal .modal-content {
   background-color: transparent;
-  margin: 20px;
 }
 .footer-scanner-modal .modal-top-info {
   background: linear-gradient(229deg, #ffab80 14%, #ffc480 76%);
