@@ -1110,7 +1110,7 @@ footer {
 
 /* ---- */
 
-.sponsor-col.active ,.show-modal-overlay.active .speaker-user img ,.show-modal-overlay.active button{
+.sponsor-col.active ,.show-modal-overlay.active .speaker-user img ,.show-modal-overlay.active a button{
   opacity: 1 !important;
   z-index: 3;
   position: relative;
@@ -1453,10 +1453,10 @@ footer {
   font-weight: 600;
   margin-top: 10px;
 }
-.box-two{
+/* .box-two{
   display: flex;
   justify-content: space-between;
-}
+} */
 .box-two h6{
 color: #fff;
 font-weight: 600;
@@ -1617,6 +1617,7 @@ font-size: 18px;
 }
 .abstact-btn {
   font-size: 12px;
+  padding: 1px 10px;
 }
 .agenda-model .modal-body {
   padding: 10px;
@@ -1625,11 +1626,15 @@ font-size: 18px;
   font-weight: 400;
   font-size: 12px;
 }
-.box-two {
+.agenda-box .desc{
+  margin-top: 8px;
+}
+/* .box-two {
   display: flex;
   gap: 10px;
   justify-content: space-between;
-}
+} */
+ 
 .pagination a {
     flex-wrap: nowrap;
     font-size: 12px;
@@ -1641,13 +1646,30 @@ font-size: 10px;
   max-height: 250px;
 }
 }
+@media (max-width: 490px) {
+  .box-two p ,.clock-div p{
+    font-size: 11px;
+}
+.clock-div img {
+  width: 15px;
+}
+.agenda-box .desc{
+  font-size: 12px;
+}
+.pagination .page-number{
+  width: 24px;
+  height: 24px;
+}
+.pagination i {
+  font-size: 12px;
+}
+
+}
 @media (max-width: 320px) {
   .box-two h6 {
       font-size: 12px;
   }
-  .box-two p {
-    font-size: 10px;
-}
+  
 .abstact-btn {
   font-size: 10px;
 }
@@ -1993,7 +2015,7 @@ font-size: 10px;
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 520px) {
   .builder-short-des {
     font-size: 12px;
     font-weight: 400;
