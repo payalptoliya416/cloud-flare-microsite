@@ -1120,8 +1120,8 @@ footer {
   border-radius: 50%;
 }
 .modal-backdrop.show {
-  opacity: 0.5;
-  background-color: #000;
+  opacity: 0.5 !important;
+  background-color: #000 !important;
   z-index: 2;
 }
 .show-modal-overlay.active .box-two p ,.show-modal-overlay.active .box-two h6,.show-modal-overlay.active .box-two a ,.show-modal-overlay.active .box-two img{
@@ -2025,7 +2025,27 @@ font-size: 10px;
   max-width: 768px;
   margin: auto;
 }
-
+.gift-modal-info .modal-content{
+  background: linear-gradient(25deg, #ffa700 10%, #ff763a 38%, #FF5A12 71%, #ffc107 98%);
+}
+.gift-modal-info  .title {
+  text-align: center;
+}
+.gift-modal-info  .title h3,.gift-modal-info  .title p ,.gift-modal-info  h2 ,.gift-modal-info h4{
+  color: white;
+  text-align: center;
+}
+.gift-modal-info .title h2 {
+  color: #fff;
+  font-weight: 800;
+}
+.gift-modal-info .title h4 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 .passport-logo {
   background-image: url("../image/bg.png");
   background-size: 100% 100%;
@@ -2095,7 +2115,7 @@ font-size: 10px;
   border: none;
   padding: 12px 28px;
   box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
+  margin: 30px auto 0px;
   color: #ff6634;
   font-weight: 700;
   font-size: 16px;
