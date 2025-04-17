@@ -1599,7 +1599,7 @@ font-size: 18px;
 /* --popup position start-- */
 .modal.modal-bottom .modal-dialog {
   position: absolute;
-  bottom: 0;
+  bottom: 64px;
   left: 0;
   right: 0;
 }
